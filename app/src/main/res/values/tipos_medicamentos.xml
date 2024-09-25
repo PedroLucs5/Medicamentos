@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="tipos_medicamentos">
+        <item>Líquido</item>
+        <item>Comprimido</item>
+    </string-array>
+</resources>

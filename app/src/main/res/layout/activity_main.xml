@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Medicamento" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/tipos_medicamentos" />
+
+    <EditText
+        android:id="@+id/editTextDosagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dosagem" />
+
+    <EditText
+        android:id="@+id/editTextHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horário" />
+
+    <Button
+        android:id="@+id/buttonAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Medicamento" />
+</LinearLayout>
