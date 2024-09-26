@@ -1,37 +1,148 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="24dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/barlow_semibold"
+            android:text="Controle de Medicamento"
+            android:textColor="#04AFB5"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+
+    </LinearLayout>
+    <!-- Nome do medicamento -->
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/barlow_semibold"
+        android:text="Nome Medicamento"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+
+    <!-- Nome do Medicamento -->
     <EditText
         android:id="@+id/editTextNome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome do Medicamento" />
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#BCBCBC"
+        android:hint="Insira o nome do medicamento
+"
+        android:padding="12dp"
+        android:textColor="@android:color/black" />
 
+    <!-- Tipo do medicamento -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/barlow_semibold"
+        android:text="Tipo do medicamento"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <!-- Tipo (Spinner) -->
     <Spinner
         android:id="@+id/spinnerTipo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#BCBCBC"
         android:entries="@array/tipos_medicamentos" />
 
+    <!-- Tipo do medicamento -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/barlow_semibold"
+        android:text="Dosagem"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <!-- Dosagem -->
     <EditText
         android:id="@+id/editTextDosagem"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Dosagem" />
+        android:layout_height="56dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#BCBCBC"
+        android:background="@drawable/rounded_background"
+        android:hint="Insira aqui a quantidade (Ex: 500ml)"
+        android:padding="12dp"
+        android:textColor="@android:color/black" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/barlow_semibold"
+        android:text="Horário"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp" />
+    <!-- Horário -->
     <EditText
         android:id="@+id/editTextHorario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Horário" />
+        android:layout_height="56dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_background"
+        android:hint="Adicione aqui o horário de sua medicação"
+        android:padding="12dp"
+        android:backgroundTint="#BCBCBC"
+        android:textColor="@android:color/black" />
 
-    <Button
-        android:id="@+id/buttonAdicionar"
-        android:layout_width="wrap_content"
+    <!-- Botão Adicionar -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adicionar Medicamento" />
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/buttonAdicionar"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:padding="5dp"
+            android:text="Adicionar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
 </LinearLayout>

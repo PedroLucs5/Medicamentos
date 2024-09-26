@@ -2,5 +2,10 @@
     <string-array name="tipos_medicamentos">
         <item>Líquido</item>
         <item>Comprimido</item>
+        <item>Cápsula</item>
+        <item>Pomada</item>
+        <item>Injetável</item>
+        <item>Aerossol</item>
+        <item>Pastilha</item>
     </string-array>
 </resources>
