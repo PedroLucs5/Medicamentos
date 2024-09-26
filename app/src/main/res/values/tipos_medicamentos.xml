@@ -1,5 +1,6 @@
 <resources>
     <string-array name="tipos_medicamentos">
+        <item>Selecionar o tipo de medicamento</item>
         <item>Líquido</item>
         <item>Comprimido</item>
         <item>Cápsula</item>

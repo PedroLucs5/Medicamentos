@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.medicamento.Medicamento;
@@ -17,6 +19,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private EditText editTextNome, editTextDosagem, editTextHorario;
     private Spinner spinnerTipo;
+    private Button buttonAdicionar;
     private ArrayList<Medicamento> listaMedicamentos;
 
     @Override
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         editTextDosagem = findViewById(R.id.editTextDosagem);
         editTextHorario = findViewById(R.id.editTextHorario);
         Button buttonAdicionar = findViewById(R.id.buttonAdicionar);
+        getSupportActionBar().hide();
 
         listaMedicamentos = new ArrayList<>();
 
