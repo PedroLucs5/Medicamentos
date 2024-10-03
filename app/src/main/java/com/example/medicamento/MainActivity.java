@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         listaMedicamentos = new ArrayList<>();
 
+        AppDatabase instance = AppDatabase.getInstance(getApplicationContext());
         buttonAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,12 +45,19 @@ public class MainActivity extends AppCompatActivity {
                 String dosagem = editTextDosagem.getText().toString();
                 String horario = editTextHorario.getText().toString();
 
-                Medicamento medicamento = new Medicamento(nome, tipo, dosagem, horario);
-                listaMedicamentos.add(medicamento);
+                if (!nome.equals("") && !tipo.equals("") && !dosagem.equals("") && !horario.equals("")){
+                    Medicamento medicamento = new Medicamento(nome, tipo, dosagem, horario);
+                    listaMedicamentos.add(medicamento);
+                    instance.getMedicamentoDAO().inserir(medicamento);
+                    editTextNome.setText("");
+                    editTextDosagem.setText("");
+                    editTextHorario.setText("");
 
-                Intent intent = new Intent(MainActivity.this, MedicamentosActivity.class);
-                intent.putExtra("listaMedicamentos", listaMedicamentos);
-                startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), MedicamentosActivity.class);
+                    intent.putExtra("listaMedicamentos", listaMedicamentos);
+                    startActivity(intent);
+                }
+
             }
         });
     }

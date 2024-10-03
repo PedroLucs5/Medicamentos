@@ -16,11 +16,13 @@ public class TelaInicial extends AppCompatActivity {
     private Button buttonMeuRemedio;
     private Button buttonAddRemedio;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_tela_inicial);
+        getSupportActionBar().hide();
 
         Button buttonMeuRemedio = findViewById(R.id.buttonMeuRemedio);
         Button buttonAddRemedio = findViewById(R.id.buttonAddRemedio);
