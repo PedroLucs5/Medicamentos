@@ -14,6 +14,7 @@ public class MedicamentosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medicamentos);
+        getSupportActionBar().hide();
 
         recyclerViewMedicamentos = findViewById(R.id.recyclerViewMedicamentos);
 

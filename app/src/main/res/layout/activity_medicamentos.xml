@@ -9,8 +9,11 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/barlow_semibold"
+        android:gravity="center"
         android:text="Lista de Medicamentos"
-        android:textSize="24sp" />
+        android:textColor="#04AFB5"
+        android:textSize="28sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewMedicamentos"

@@ -3,29 +3,83 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="16dp"
+    android:background="@drawable/card_background"
+    android:elevation="6dp"
+    android:layout_margin="8dp">
 
     <TextView
         android:id="@+id/textViewNome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome" />
+        android:text="Nome"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
 
-    <TextView
-        android:id="@+id/textViewTipo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tipo" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/textViewDosagem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dosagem" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_tipo"
+            android:contentDescription="Tipo" />
 
-    <TextView
-        android:id="@+id/textViewHorario"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textViewTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Horário" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_dosagem"
+            android:contentDescription="Dosagem" />
+
+        <TextView
+            android:id="@+id/textViewDosagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosagem"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_horario"
+            android:contentDescription="Horário" />
+
+        <TextView
+            android:id="@+id/textViewHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horário"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
 </LinearLayout>
